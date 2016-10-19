@@ -1,0 +1,15 @@
+#img-left{
+    float: left;
+    width: 340px;
+    height: 670px;
+    background-size: 340px 670px;
+    background-image: url("../img/img.jpg");
+}
+#message-right{
+    overflow:scroll;
+    height: 670px;
+}
+
+#exampleInputEmail2{
+    float: right;
+}

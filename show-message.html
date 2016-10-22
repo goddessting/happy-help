@@ -2,58 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HappyHelp</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.js">
+    <title>乐助网</title>
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <link rel="stylesheet" href="./js/bootstrap.js">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <script src="js/jquery.js"></script>
 
     <link href="./css/show-message-style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/relese-style.css">
 
-    <script language="JavaScript" type="text/javascript" src="js/pulish.js"></script>
-    <!--<script language="JavaScript" type="text/javascript" src="js/show-message.js"></script>-->
+    <script language="JavaScript" type="text/javascript" src="js/show-massage.js"></script>
 </head>
 <body>
 
-<div id="img-left"></div>
+<div id="img-left">
+    <div id="bottom">
+        <img src="./img/22.jpg" width="335px" height="500px">
+        <span><br>乐助<br>帮助他人，快乐自己</span>
+    </div>
+</div>
 <div id="message-right">
-    <div class="right-top">
-        <form class="form-inline" role="form">
-            <div class="form-group">
-                <div id="table" class="center-block">
-                    <ul class="nav nav-pills nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#">无偿助</a></li>
-                        <li role="presentation" id="li1"><a href="#">发现</a></li>
-                        <li role="presentation" id="li2"><a href="#">发布</a></li>
-                        <li role="presentation" id="li5">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="搜索"></li>
-                        <li>
-                            <span class="glyphicon glyphicon-search"></span>
-                        </li>
+    <div id="right-left">
+        <div class="right-top">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <div id="table" class="center-block">
+                        <ul class="nav nav-pills nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#">无偿助</a></li>
+                            <li role="presentation" id="li1"><a href="#">发现</a></li>
+                            <li role="presentation" id="li2"><a href="#">发布</a></li>
+                            <li role="presentation" id="li5">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="搜索"></li>
+                            <li>
+                                <span class="glyphicon glyphicon-search"></span>
+                            </li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="button" class="btn btn-info">登录</button>
+                            </li>
+                            <li>&nbsp;&nbsp;<button type="button" class="btn btn-info">注册</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="find">
+            <div id="kind">
+                <nav>
+                    <ul class="pager">
+                        <li><a href="#" class="">热门</a></li>
+                        <li><a href="#">取快递</a></li>
+                        <li><a href="#">还书</a></li>
+                        <li><a href="#">买饭</a></li>
                     </ul>
+                </nav>
+            </div>
+            <div>
+                <span id="message">数据库返回的信息写这里</span>
+            </div>
+        </div>
+        <div id="publish">
+            <div class="location">
+                <div class="aaa">
+                    <nav class="room">
+                        <ul class="pager">
+                            <li><a href="#" onclick="document.getElementById('field').value='#取快递#'">取快递</a></li>
+                            <li><a href="#" onclick="document.getElementById('field').value='#还书#'">还书</a></li>
+                            <li><a href="#" onclick="document.getElementById('field').value='#买饭#'">买饭</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </form>
-    </div>
-
-    <div id="find">
-        <div>
-            <nav>
-                <ul class="pager">
-                    <li><a href="#" class="">热门</a></li>
-                    <li><a href="#">取快递</a></li>
-                    <li><a href="#">还书</a></li>
-                    <li><a href="#">买饭</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <span id="message"></span>
+            <br><br>
+            <textarea id="field" class="text" rows="5" cols="50" placeholder="请输入发布内容"></textarea><br><br>
+            <button type="button" class="btn btn-info btn-primary btn-sm anniu" onclick="">发布</button>
         </div>
     </div>
-    <div id="publish"></div>
 </div>
+
 </body>
 </html>

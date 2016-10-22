@@ -1,10 +1,69 @@
-#img-left{
+#img-left {
+    /*margin-top: 50px;*/
     float: left;
-    width: 340px;
-    height: 670px;
-    background-size: 340px 670px;
-    background-image: url("../img/img.jpg");
+    width: 445px;
+    height: 620px;
+    position: relative;
+    /*margin-right: ;*/
 }
+
+/*#message-right {*/
+    /*overflow: scroll;*/
+    /*!*overflow-x: hidden;*!*/
+    /*!*overflow-y: hidden;*!*/
+    /*height: 620px;*/
+    /*width: 650px;*/
+    /*!*float: right;*!*/
+    /*right: auto;*/
+/*}*/
+
+/*#exampleInputEmail2 {*/
+    /*float: right;*/
+/*}*/
+
+.right-top {
+    /*position: fixed;*/
+    margin-top: 30px;
+    left: 500px;
+    margin-left: 20px;
+}
+
+/*#right-log {*/
+    /*margin-top: 30px;*/
+/*}*/
+
+#bottom {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    font-size: 20px;
+    font-style: oblique;
+    color: #d58512;
+}
+
+/*#find {*/
+    /*margin-top: 50px;*/
+    /*margin-left: -250px;*/
+/*}*/
+
+/*#log-right {*/
+    /*position: relative;*/
+    /*float: right;*/
+    /*width: 5%;*/
+    /*height: 620px;*/
+/*}*/
+
+/*#find{*/
+    /*width: 50px;*/
+/*}*/
+
+/*#img-left{*/
+    /*float: left;*/
+    /*width: 340px;*/
+    /*height: 670px;*/
+    /*background-size: 340px 670px;*/
+    /*background-image: url("../img/22.jpg");*/
+/*}*/
 #message-right{
     overflow:scroll;
     height: 670px;
@@ -12,4 +71,15 @@
 
 #exampleInputEmail2{
     float: right;
+}
+
+#kind{
+    margin-left: -300px;
+}
+
+#find{
+    margin-top: 50px;
+}
+#login,#table{
+    display: inline;
 }
